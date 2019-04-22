@@ -43,15 +43,7 @@
         state: started
         enabled: yes
 
-    - name: Build Docker image from Dockerfile
-      docker_image: >
-        name=built-ansible
-        tag=v0
-        path=/home/vagrant/docker_project
-        state=present  
+    - include: appjava.yml
 
-    - name: Run the app in a docker container
-      docker_container:
-        name: app
-        image: "built-ansible:v0"
-        state: started
+    - include: static.yml
+
