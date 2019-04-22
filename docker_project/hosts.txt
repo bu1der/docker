@@ -1,0 +1,5 @@
+[STAGING_SERVERS_WEB]
+web   ansible_host=192.168.56.10
+
+[STAGING_SERVERS_WEB:vars]
+ansible_ssh_private_key_file=/home/vagrant/.ssh/192.168.56.10.pem

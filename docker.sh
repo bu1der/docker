@@ -1,6 +1,13 @@
 #!/usr/bin/bash
 
 # sudo yum -y update
+sudo yum -y install nano wget tree mc
+
+#Ansible
+sudo yum -y install epel-release
+sudo yum -y install ansible
+sudo rm /etc/ansible/ansible.cfg
+sudo chmod 400 ~/.ssh/*.pem
 
 #Docker
 #1 Uninstall old versions

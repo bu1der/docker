@@ -1,7 +1,6 @@
 #################
-## GIT
+## Docker
 #################
 
-
-.vagrant/
-old/
+*.md
+!README.md
