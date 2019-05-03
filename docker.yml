@@ -43,7 +43,5 @@
         state: started
         enabled: yes
 
-    - include: appjava.yml
-
     - include: static.yml
 

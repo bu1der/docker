@@ -1,14 +1,14 @@
     - name: Build Docker image from Dockerfile
       docker_image: >
-        name=built-appjava
+        name=built-static
         tag=v0
-        path=/home/vagrant/docker_project/appjava
+        path=/vagrant
         state=present  
 
     - name: Run the app in a docker container
       docker_container:
-        name: app
-        image: "built-appjava:v0"
+        name: site
+        image: "built-static:v0"
         state: started
         ports: 
           - "8080:80"
